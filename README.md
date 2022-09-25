@@ -12,7 +12,6 @@ $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 
 ```zsh
 $ brew install ansible
-$ ansible-galaxy collection install geerlingguy.mac
 ```
 
 ## man
