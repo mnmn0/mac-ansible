@@ -1,0 +1,13 @@
+- name: update homebrew
+  community.general.homebrew:
+    name:
+      - ansible
+      - mas
+      - git
+      - jq
+      - tree
+      - wget
+      - zsh
+      - nodenv
+
+
