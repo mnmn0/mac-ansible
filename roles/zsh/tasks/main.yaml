@@ -6,3 +6,12 @@
 
 - name: change shell to brew zsh
   shell: chsh -s /usr/local/bin/zsh
+
+- name: Setup .zshrc from GitHub
+  hosts: localhost
+  tasks:
+    - name: Download .zshrc from GitHub
+      get_url:
+        url: https://raw.githubusercontent.com/mnmn0/zsh-profile/main/.zshrc
+        dest: ~/.zshrc
+        mode: '0644'
