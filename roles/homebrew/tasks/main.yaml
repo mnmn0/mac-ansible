@@ -8,6 +8,5 @@
       - tree
       - wget
       - zsh
-      - nodenv
-
-
+      - nodebrew
+      - pyenv
