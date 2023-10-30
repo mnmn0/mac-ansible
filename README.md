@@ -1,5 +1,7 @@
 # Install
 
+AppStoreにログインしてから実行する
+
 ## Homebrew
 
 [Homebrew](https://brew.sh/index_ja)
