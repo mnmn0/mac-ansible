@@ -20,3 +20,8 @@ $ brew install ansible
 $ brew install mas
 ```
 
+## run
+
+```zsh
+$ ansible-playbook -i localhost, -c local playbook.yaml
+```
