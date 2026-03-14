@@ -10,3 +10,14 @@
       - zsh
       - nodebrew
       - pyenv
+      - act
+      - awscli
+      - ffmpeg
+      - gh
+      - go
+      - htop
+      - lefthook
+      - poetry
+      - rbenv
+      - rust
+      - uv

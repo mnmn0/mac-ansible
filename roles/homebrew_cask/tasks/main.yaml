@@ -1,11 +1,27 @@
 - name: install homebrew cask packages
   community.general.homebrew_cask:
     name:
+      - 1password
+      - claude
+      - cmux
       - discord
       - docker
+      - docker-desktop
+      - drawio
+      - fork
       - google-chrome
+      - jetbrains-toolbox
+      - libreoffice
+      - lm-studio
+      - microsoft-office
       - ngrok
       - notion
+      - parallels
       - postman
+      - raycast
+      - screen-studio
+      - slack
+      - splashtop-personal
       - visual-studio-code
+      - voicepeak
       - zoom

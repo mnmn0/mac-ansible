@@ -2,4 +2,8 @@
   community.general.mas:
     upgrade_all: yes
     id:
-      - 803453959 #Slack
+      - 803453959  # Slack
+      - 539883307  # LINE
+      - 497799835  # Xcode
+      - 1176895641 # Spark
+      - 1233965871 # ScreenBrush
