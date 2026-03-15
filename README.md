@@ -37,3 +37,4 @@ $ ansible-playbook -i localhost, -c local playbook.yaml
 | DaVinci Resolve | https://www.blackmagicdesign.com/products/davinciresolve |
 | Blackmagic RAW | https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion |
 | LINE WORKS | https://line.worksmobile.com/jp/ |
+| Parallels Desktop | https://www.parallels.com/jp/products/desktop/ |
