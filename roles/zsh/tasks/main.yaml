@@ -5,13 +5,11 @@
   become: true
 
 - name: change shell to brew zsh
-  shell: chsh -s /usr/local/bin/zsh
+  shell: dscl . -create /Users/{{ lookup('env', 'USER') }} UserShell /usr/local/bin/zsh
+  become: true
 
-- name: Setup .zshrc from GitHub
-  hosts: localhost
-  tasks:
-    - name: Download .zshrc from GitHub
-      get_url:
-        url: https://raw.githubusercontent.com/mnmn0/zsh-profile/main/.zshrc
-        dest: ~/.zshrc
-        mode: '0644'
+- name: Download .zshrc from GitHub
+  get_url:
+    url: https://raw.githubusercontent.com/mnmn0/zsh-profile/main/.zshrc
+    dest: ~/.zshrc
+    mode: '0644'
