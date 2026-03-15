@@ -8,6 +8,7 @@
       - tree
       - wget
       - zsh
+      - bun
       - nodebrew
       - pyenv
       - act

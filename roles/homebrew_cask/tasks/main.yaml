@@ -1,3 +1,10 @@
+- name: allow passwordless sudo for installer
+  lineinfile:
+    dest: /etc/sudoers
+    line: "{{ lookup('env', 'USER') }} ALL=(root) NOPASSWD: SETENV: ALL"
+    validate: 'visudo -cf %s'
+  become: true
+
 - name: create /usr/local/cli-plugins for docker
   file:
     path: /usr/local/cli-plugins
@@ -31,7 +38,6 @@
     - slack
     - splashtop-personal
     - visual-studio-code
-    - voicepeak
     - zoom
   register: result
   failed_when:
