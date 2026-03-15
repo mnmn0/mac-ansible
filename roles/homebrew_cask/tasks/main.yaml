@@ -1,3 +1,10 @@
+- name: create /usr/local/cli-plugins for docker
+  file:
+    path: /usr/local/cli-plugins
+    state: directory
+    mode: '0755'
+  become: true
+
 - name: install homebrew cask packages
   community.general.homebrew_cask:
     name: "{{ item }}"
@@ -17,7 +24,6 @@
     - lm-studio
     - microsoft-office
     - ngrok
-    - notion
     - parallels
     - postman
     - raycast
