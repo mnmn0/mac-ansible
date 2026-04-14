@@ -1,3 +1,7 @@
+- name: tap oven-sh/bun
+  community.general.homebrew_tap:
+    name: oven-sh/bun
+
 - name: update homebrew
   community.general.homebrew:
     name:
